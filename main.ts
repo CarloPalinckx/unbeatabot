@@ -7,7 +7,7 @@ namespace Cache {
 }
 
 basic.forever(function () {
-  console.log(new Cache.InMemory());
+  console.log(new Cache.InMemory().getSome());
   basic.showLeds(`
 	. . . . .
 	. . . . .
