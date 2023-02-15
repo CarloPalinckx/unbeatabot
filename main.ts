@@ -1,7 +1,9 @@
-export const a = "a";
+namespace Engine {
+  export const a = "a";
+}
 
 basic.forever(function () {
-  console.log(a);
+  console.log(Engine.a);
   basic.showLeds(`
 	. . . . .
 	. . . . .
