@@ -1,0 +1,22 @@
+{
+  "name": "unbeatabot",
+  "version": "1.0.0",
+  "description": "> Open this page at [https://carlopalinckx.github.io/unbeatabot/](https://carlopalinckx.github.io/unbeatabot/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarloPalinckx/unbeatabot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarloPalinckx/unbeatabot/issues"
+  },
+  "homepage": "https://github.com/CarloPalinckx/unbeatabot#readme",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
