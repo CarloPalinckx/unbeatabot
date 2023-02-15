@@ -1,11 +1,10 @@
 /**
  * NameSpaces
  */
-namespace Cache {
-    export class InMemory {}
-}
 
 namespace Positioning {
+    export type Coords = [/** X */ number, /** Y */ number];
+
     export class Position {
         public x: number;
         public y: number;
@@ -19,9 +18,28 @@ namespace Positioning {
             this.x = x;
             this.y = y;
         }
+
+        public toCoords(): Coords {
+            return [this.x, this.y];
+        }
     }
 }
 
+namespace Area {
+    export class Grid {
+        private grid: Map<Positioning.Coords, boolean>;
+
+        public constructor() {
+            this.grid = new Map();
+        }
+
+        public addPoint(coords: Positioning.Coords, isAvailable: boolean) {
+            this.grid.set(coords, isAvailable);
+        }
+    }
+}
+
+const grid = new Area.Grid();
 const position = new Positioning.Position();
 
 basic.forever(function () {
