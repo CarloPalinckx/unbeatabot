@@ -7,8 +7,13 @@ namespace Cache {
 
 namespace Positioning {
     export class Position {
-        public x: number = 0;
-        public y: number = 0;
+        public x: number;
+        public y: number;
+
+        public constructor() {
+            this.x = 0;
+            this.y = 0;
+        }
 
         public move(x: number, y: number) {
             this.x = x;
